@@ -35,7 +35,7 @@ The **WHU-Hi dataset** contains hyperspectral images acquired from UAV-borne sen
   - Computes the total reflected light energy across all spectral bands.
   - Formula: \( \text{Irradiance} = \sum_{i=1}^{B} \text{Radiance}_i \cdot \text{Bandwidth}_i \).
 
-![Spectral Band 50](file-YZAQywxx3sJmbz4cCpyVkj)
+![Spectral Band 50](spectral.png)
 
 **Description**: This image shows the intensity distribution in spectral band 50, highlighting features like water bodies and vegetation.
 
@@ -44,7 +44,7 @@ The **WHU-Hi dataset** contains hyperspectral images acquired from UAV-borne sen
 ### **2. Spectral Analysis**
 - Visualizes the spectral signature of individual pixels to understand material properties.
 
-![Spectral Signature](file-CZSADxHfmnZi2NA8cyeXMU)
+![Spectral Signature](spectrum.png)
 
 **Description**: The spectral signature of a pixel (row 100, column 100) is plotted across 270 bands, showing distinct peaks and troughs corresponding to specific wavelengths.
 
@@ -54,7 +54,7 @@ The **WHU-Hi dataset** contains hyperspectral images acquired from UAV-borne sen
 - Trains a **Random Forest Classifier** to classify pixels based on their spectral signatures.
 - Generates a **confusion matrix** to evaluate performance.
 
-![Confusion Matrix](file-NQdyq9dPvHFrg9z5py9ejM)
+![Confusion Matrix](cm.png)
 
 **Description**: The confusion matrix shows the classifier's accuracy for each class. The overall accuracy is **98%**, with high precision and recall for most classes.
 
@@ -64,7 +64,7 @@ The **WHU-Hi dataset** contains hyperspectral images acquired from UAV-borne sen
 - Predicts classes for all pixels in the hyperspectral image.
 - Generates a classification map to visualize spatial distribution.
 
-![Classification Map](file-RrqvdYSzbj8w4iPXTVJnhi)
+![Classification Map](map.png)
 
 **Description**: This map displays the predicted land-cover types, revealing distinct spatial patterns for different classes (e.g., crops, water).
 
